@@ -1,11 +1,11 @@
 {
   "ProjectName": "DSM Mobile Front End",
-  "ProjectGuid": "353f51e4-3aa4-4baf-8fdd-9f20fc539396",
+  "ProjectGuid": "aaf0761f-7033-488b-9d9f-c6d08822c114",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.DSMMobileFrontEnd",
-  "DisplayName": "DSM Mobile Front End",
+  "AppIdentifier": "com.DSM.DSMMobile",
+  "DisplayName": "DSM Mobile",
   "Author": "",
-  "Description": "DSM Mobile Front End",
+  "Description": "DSM Mobile",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -19,8 +19,7 @@
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
   "AndroidHardwareAcceleration": "false",
   "iOSStatusBarStyle": "Default",
@@ -32,10 +31,10 @@
     "ID_CAP_WEBBROWSERCOMPONENT"
   ],
   "WP8Requirements": [],
-  "WP8PublisherID": "{74954e25-74ca-4f76-9078-3e1cf3d80a69}",
-  "WP8ProductID": "{e03691ce-d04d-4340-a645-231e5ca2a928}",
+  "WP8PublisherID": "{43d020ad-1f62-479f-b002-defb67b73cce}",
+  "WP8ProductID": "{1cd43331-a284-4582-a455-e98684ba1ea7}",
   "WPSdk": "8.0",
-  "WP8PackageIdentityName": "1234Telerik.DSMMobileFrontEnd",
+  "WP8PackageIdentityName": "1234Telerik.DSMMobile",
   "WP8WindowsPublisherName": "CN=Telerik",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",

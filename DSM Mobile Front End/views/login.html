@@ -1,0 +1,26 @@
+<div data-role="view" id="loginView" data-title="Login"
+     data-layout="login" data-model="APP.models.login.loginViewModel">
+	<div id="form-login" data-role="content" class ="dsmimg" style="position:relative;">
+		<input type="text" id="username" required validationMessage="T# is required"
+		       class="username loginInputImg"
+			   data-bind ="value:tnumber"
+			   style="position:absolute; top:25vh; left:15%; width:70%;"
+			   placeholder="T#"/>
+		<input type="password" id="password" class="password loginInputImg"
+		       required validationMessage="Password is required"
+			   data-bind="value:password"
+			   style="position:absolute; top:30vh; left:15%; width:70%"
+			   placeholder="password"/>
+		<select id="dropdown" data-bind ="value:company"
+		        style="position:absolute; top:35vh; left:15%; width:70%">
+			<option value="IMIC">IMIC</option>
+			<option value="MMIC">MMIC</option>
+			<option value="PMIC">PMIC</option>
+			<option value="WMIC">WMIC</option>
+		</select>
+		<button class="k-button loginimg" style="position:absolute; top:55vh; left:35%; width:30%; height:4vh; border:0px; color:white"
+		        data-bind="click:login">
+            Login
+		</button>
+	</div>
+</div>

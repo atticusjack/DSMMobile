@@ -1,0 +1,30 @@
+<div data-role="view" data-title="Contacts" data-layout="main" data-model="APP">
+    <div data-role="navbar">
+        <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+    </div>
+    <ul id="contact-listview" data-style="inset" data-role="listview" data-template="contactListTemplate" data-bind="source: contactListSource">
+    </ul>
+    <p id="no-contactlist-span" hidden="hidden" class="no-items-msg">
+        <b>No contacts.</b>
+    </p>
+</div>
+<!-- Contacts ListView Template -->
+<script type="text/x-kendo-template" id="contactListTemplate">
+    <div style="height:auto;width:100%;">
+        <div style="float:left;height:100%;width:33%;">
+            <img id="teamMemberPhoto" />
+        </div>
+        <div style="float:left;height:100%;margin:5;padding:5;width:67%">
+            <div id="name">#: data.name #</div>
+            <div>#: data.title #</div>
+            <div style="height:80 !important;width:100%;clear:both">
+                <div style="float:left;width:50%;height:100%;">
+                    <a style="width:100%;border:0px;" data-role="button" class="callimg" data-phone="#: data.phone #" href="tel:#: data.phone #" />
+                </div>
+                <div style="float:left;width:50%;">
+                    <a style="width:100%;border:0px;" data-role="button" class="emailimg" data-phone="#: data.email #" href="mailto:#: data.email #" />
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

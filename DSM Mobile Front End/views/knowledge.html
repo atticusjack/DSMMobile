@@ -1,0 +1,83 @@
+<div data-role="view" data-title="Knowledge" data-layout="main"
+     data-model="APP.models.knowledge">
+	<div id="form-knowledge" data-role="content" style="position:relative;">
+		<img src="styles/images/knowledge_header.png" width="100%" class="resimgs"/> 
+		<div style="height:40px">
+			<div style ="float:left; vertical-align:middle; width:50%; display:inline-block;">
+				<span>Rate this future feature:</span>&nbsp;
+			</div>
+
+			<div class="small" style ="float:left; vertical-align:middle; width:50%;">  
+				<input id="knowledgeRating" max="5" step="1" data-role="rating"
+				       data-bind="value: rating, visible: visible, enabled: enabled"/>
+			</div>
+		</div>
+		<div>
+			<textarea name="feedback" cols="40" rows="5"
+			          data-bind="value:knowledgeFeedbackText"
+					  style="position:absolute; left:5%; height:30vh; width:90%; right:5%"/>
+		</div>
+		<div>
+			<div style="clear:both; width:100%">
+				<button class="k-button submitfeedbackimg"
+				        style="position:absolute; top:45vh; left:35%; width:30%; height:4vh; border:0px;"
+						data-bind="click:submitfeedback">
+                    Submit Feedback
+				</button>
+			</div>
+		</div>  
+		<div style="position:absolute; top:55vh; clear:both">
+			<hr style="border-color:lightgray"/>
+			<span>
+				<!--
+				<b>Video Chat:</b>
+				<ul>
+					<li type="disc">What it does?
+						<ul>
+							<li type="circle">Provides real-time video capability from any Sales team member to another</li>
+						</ul>
+					</li>
+					<li type="disc">Benefits of Video Chat:
+						<ul>
+							<li type="circle">Provide familiarity with team members not regularly communicated with</li>
+						</ul>
+					</li>
+					<li type="disc">Why DSM’s need this?
+						<ul>
+							<li type="circle">Foremost communication method available without being face-to-face</li>
+						</ul>
+					</li>
+					<li type="disc">Features
+						<ul>
+							<li type="circle">Instant access to all sales team members with a single click</li>
+						</ul>
+					</li>
+				</ul>
+				-->
+				<b>Knowledge:</b>
+				<ul>
+					<li type="disc">What it does?
+						<ul>
+							<li type="circle">Ability to view all product information including documentation, policy forms, underwriting guidelines, and product applications directly from this app</li>
+						</ul>
+					</li>
+					<li type="disc">Benefits of Knowledge:
+						<ul>
+							<li type="circle">Real time answers to questions posed by agency personnel</li>
+						</ul>
+					</li>
+					<li type="disc">Why DSM’s need this?
+						<ul>
+							<li type="circle">In-depth product knowledge is beneficial to be able to sell various products</li>
+						</ul>
+					</li>
+					<li type="disc">Features
+						<ul>
+							<li type="circle">Keyword searching across all information repositories that contain this information throughout the Motorists group</li>
+						</ul>
+					</li>
+				</ul>
+			</span>
+		</div>
+	</div>
+</div>

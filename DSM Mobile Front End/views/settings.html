@@ -1,0 +1,16 @@
+<div data-role="view" data-title="Settings" data-layout="main" data-model="APP.models.settings">
+    <div id="form-settings" data-role="content" class="dsmimg" style="position: relative;">
+        <div class="tableview-section">
+            <ul data-role="listview" data-type="group">
+                <li>
+                    Preferences
+                    <ul>
+                        <li>Save T#
+                            <input id="user-switch" data-off-label="No" data-on-label="Yes" data-role="switch" type="checkbox" data-bind="checked: saveUserPass, events: { change: saveUserPassChange}" />
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

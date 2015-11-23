@@ -1,0 +1,68 @@
+<div data-role="view" data-title="Reports" data-layout="main" data-model="APP.models.reports">
+	<div id="form-reports" data-role="content"  style="position: relative;">
+		<img src="styles/images/reports_header.png" width="100%" class="resimgs"/>
+		<div style="height:40px">
+
+			<div style ="float:left; vertical-align:middle; width:50%; display:inline-block;">
+				<span>Rate this future feature:</span>&nbsp;
+			</div>
+
+			<div class="small" style ="float:left; vertical-align:middle; width:50%;">
+				<input id="emailRating" max="5" step="1" data-role="rating"
+				       data-bind="value:rating, visible:visible, enabled:enabled"/>
+			</div>
+		</div>
+
+		<div>
+			<textarea name="reports" cols="40" rows="5"
+			          data-bind="value:reportsFeedbackText"
+					  style="position:absolute; left:5%; height:30vh; width:90%; right:5%"/>
+		</div>
+
+		<div>
+			<div style="clear:both;width:100%">
+				<button class="k-button submitfeedbackimg"
+				        style="position:absolute; top:50vh; left:35%; width:30%; height:4vh; border:0px;"
+						data-bind="click:submitfeedback">
+                    Submit Feedback
+				</button>
+			</div>
+		</div>
+
+		<div style="position:absolute; top:55vh; clear:both">
+			<hr style="border-color:lightgray"/>
+			<span>
+				<b>Reports:</b>
+				<ul>
+					<li type="disc">What it does?
+						<ul>
+							<li type="circle">The reports section of the application will allow Sales Team members to show agencies reports as well as demographic data (ie: submissions, cancellations, retention, loss ratio, and claims)</li>
+						</ul>
+					</li>
+					<li type="disc">Benefits of Reports:
+						<ul>
+							<li type="circle">Will be able to have up-to-date reports at their fingertips for agency/agent visits</li>
+							<li type="circle">Will have the ability to show agency/agent exactly how many apps, premium, etc. have been submitted for month/year</li>
+							<li type="circle">Will have information readily available so they have more knowledge of the production each agency is producing (ie: loss ratios, new business production as well as new business  opportunities)</li>
+						</ul>
+					</li>
+					<li type="disc">Why Sales Team members need this?
+						<ul>
+							<li type="circle">DSM’s will be able to provide exemplary service while having the necessary tools out in the field</li>
+							<li type="circle">Provides “real time” updates for DSM’s ( ie: loss ratio, new business production) updated daily, weekly instead of monthly</li>
+						</ul>
+					</li>
+					<li type="disc">Features
+						<ul>
+							<li type="circle">Dashboards available</li>
+							<li type="circle">Ad-Hoc reporting</li>
+							<li type="circle">Data and reports are auto updated</li>
+							<li type="circle">Secure</li>
+							<li type="circle">User Friendly</li>
+						</ul>
+					</li>
+				</ul>
+			</span>
+		</div>
+	</div>
+</div>
